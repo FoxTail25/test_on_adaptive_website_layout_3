@@ -12,9 +12,13 @@
 html {
   font-family: "DM Sans", "Courier New", sans-serif;
   font-weight: 400;
+  color:var(--color5_white)
 }
-
+header, main, footer {
+  width: 100vw;
+}
 .container {
   max-width: 1280px;
   margin: 0 auto;
+  box-sizing: border-box;
 }

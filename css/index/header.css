@@ -8,12 +8,10 @@ header {
 
 .header {
 	height: 50px;
-	box-sizing: border-box;
 	
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	
 	
 	nav,
 	.logo,
@@ -22,12 +20,9 @@ header {
 	}
 	
 	nav {
-		display: block;
 		padding-left: 32px;
 		width: 209px;
-		/* display: flex; */
-		/* justify-content: space-between; */
-		
+
 		a {
 			color: var(--color2_red);
 			text-decoration: none;
