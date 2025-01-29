@@ -159,6 +159,7 @@ main {
         font-size: 14px;
       }
     }
+
     .block_2 {
       margin-top: 44px;
       display: flex;
@@ -172,26 +173,39 @@ main {
         }
       }
 
-      div {
+      div.block_2_content {
         background: var(--color5_white);
         width: 389px;
         height: 128px;
         border-radius: 20px;
         display: flex;
         align-items: center;
-
+        justify-content: space-between;
+        box-sizing: border-box;
+        
+        padding-left: 20px;
+        /* padding-right: 20px; */
+        
         :first-child {
-          margin-left: 20px;
-          margin-right: 14px;
-          padding: 13px 21px;
+          box-sizing: border-box;
+          /* padding: 18px 21px; */
           font-size: 18px;
           width: 136px;
           border-radius: 200px;
+
+          display: flex;
+          justify-content: center;
+          align-items:center;
+
+          height: 48px;
         }
         :last-child {
           font-size: 14px;
           color: var(--color1_black);
-          width: 166px;
+          /* width: 166px; */
+          padding-left: 14px;
+          padding-right: 20px;
+          flex:1;
         }
         .red {
           background: var(--color2_red);
