@@ -1,7 +1,7 @@
 main {
   margin-top: 50px;
   background-color: var(--color2_red);
-  height: 6000px;
+  /* height: 6000px; */
 
   .fresh_harvest_box {
     padding: 0 62px;
@@ -219,7 +219,61 @@ main {
       }
     }
     .block_3 {
-      padding-top: 62px
+      padding-top: 62px;
+      display: flex;
+      justify-content: center;
+      
+      img {
+        height: 476px;
+        width: auto;
+      }
+    }
+  }
+  .organic_fruits {
+    margin-top: 150px;
+    text-align: center;
+    .text_box {
+      margin: 0 auto;
+      width: 624px;
+      h3 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    .card_box {
+      margin-top: 20px;
+      width: 1215px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 0 auto;
+
+      @media (max-width: 1279px) {
+        /* justify-content: center; */
+        width: calc(344px * 2 + 16px);
+        margin: 0 auto;
+      }
+
+      @media (max-width: 768px) {
+        width: 350px;
+      }
+      
+      
+      img {
+        margin-top: 24px;
+        width: 389px;
+        height: auto;
+        @media (max-width: 1279px) {
+        
+          width: 344px;
+        
+        &:last-child {
+          display: none;
+        }
+      }
+      }
     }
   }
 }
