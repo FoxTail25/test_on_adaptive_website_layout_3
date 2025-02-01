@@ -106,6 +106,9 @@
 		}
 		.phone {
 			margin-top: 40px;
+			@media (max-width:1279px) {
+				margin-top: 44px;
+			}
 		}
 		address {
 			margin-top: 20px;
