@@ -10,11 +10,12 @@
 		padding-left: 32px;
 		@media (max-width:1279px) {
 			flex-direction: column;
+			width: fit-content;
+			flex: 0;
 		}
 		.img_block {
 			width: 349px;
 			@media (max-width:1279px) {
-				width: auto;
 			}
 			img {
 				display: block;
@@ -51,7 +52,7 @@
 				align-self: center;
 				display: flex;
 				flex-direction: column;
-				align-items: center;
+				align-items: end;
 			}
 
 		.social_block {
