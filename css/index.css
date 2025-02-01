@@ -21,4 +21,5 @@ header, main, footer {
   max-width: 1280px;
   margin: 0 auto;
   box-sizing: border-box;
+  letter-spacing: -0.04em;
 }
