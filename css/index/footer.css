@@ -2,15 +2,20 @@
 	color:var(--color2_red);
 	background: var(--color5_white);
 	display: flex;
+	padding: 80px 0;
 	.left_side {
-		margin-top: 80px;
 		flex: 1;
 		display: flex;
 		justify-content: space-between;
+		padding-left: 32px;
+		@media (max-width:1279px) {
+			flex-direction: column;
+		}
 		.img_block {
-			width: 50%;
-			padding-left: 32px;
 			width: 349px;
+			@media (max-width:1279px) {
+				width: auto;
+			}
 			img {
 				display: block;
 				margin: 0 auto;
@@ -20,11 +25,13 @@
 			}
 		}
 		nav {
-			margin-top: 80px;
-			/* justify-self: center; */
 			flex: 1; 	
 			display: flex;
 			justify-content: center;
+			align-self: center;
+			@media (max-width:1279px) {
+				margin-top: 80px;
+			}
 			a {
 				text-decoration: none;
 				font-size: 14px;
@@ -39,9 +46,15 @@
 	.right_side {
 		width: 184px;
 		margin-right: 32px;
+		@media (max-width:1279px) {
+				flex: 1;
+				align-self: center;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
 
 		.social_block {
-			margin-top: 80px;
 			div {
 				width: 44px;
 				height: 44px;
@@ -73,6 +86,7 @@
 		}
 		.phone, address {
 			font-size: 18px;
+			text-align: left;
 		}
 		.phone {
 			margin-top: 40px;
