@@ -1,8 +1,13 @@
 			
 const btn = document.querySelector(".mobil_menu_btn");
 const mobil_menu = document.querySelector(".mobil_menu");
+const logo = document.querySelector(".logo");
 let menu_open = false; 
-btn.addEventListener('click', open_and_close_mobil_menu)
+btn.addEventListener('click', open_and_close_mobil_menu);
+logo.addEventListener('click', ()=> {
+    menu_open = true;
+    open_and_close_mobil_menu();
+})
 
 function open_and_close_mobil_menu () {
     if(!menu_open) {

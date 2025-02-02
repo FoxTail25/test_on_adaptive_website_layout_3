@@ -198,6 +198,7 @@ main {
   }
 
   .fruit_basket {
+    scroll-margin-top: 100px;
     margin-top: 150px;
     width: 100%;
     .block_1 {
@@ -302,6 +303,8 @@ main {
     }
   }
   .organic_fruits {
+    scroll-margin-top: 100px;
+
     margin-top: 150px;
     text-align: center;
     @media (max-width: 1279px) {
