@@ -295,10 +295,15 @@ main {
       @media (max-width: 767px) {
         padding-top: 44px;
       }
-
+      
       img {
         height: 476px;
         width: auto;
+        max-width: calc(100% - 64px);
+        @media (max-width: 1279px) {
+         height: auto
+        }
+
       }
     }
   }
