@@ -80,9 +80,8 @@ header {
 			left: 0;
 			background-color: var(--color2_red);
 			flex-direction: column;
-			/* justify-content: center; */
 			align-items:center;
-			padding-top: 174px;
+			padding-top: min(15vh, 174px);
 			padding-left: 0;
 			a {
 				color:var(--color5_white);
