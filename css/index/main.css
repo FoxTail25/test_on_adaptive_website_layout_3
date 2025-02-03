@@ -26,8 +26,8 @@ main {
         font-size: 14px;
         width: 222px;
 
-        @media (max-width:767px) {
-          width: 278px;
+        @media (max-width:1279px) {
+          width: 279px;
         }
       }
       .banner__1__img {
@@ -41,6 +41,11 @@ main {
     }
     .banner__1__content {
       margin-top: 408px;
+      @media (max-width:1279px) {
+        display: flex;
+        flex-direction: column;
+      align-items:end;
+      }
     }
 
     .banner__2 {
@@ -60,6 +65,7 @@ main {
 
         @media (max-width:767px) {
           width: 335px;
+          margin-top: 0;
         }
 
         .banner2__text {
@@ -78,6 +84,7 @@ main {
             @media (max-width: 767px) {
               width: 336px;
               font-size: 28px;
+              top:60px;
             }
           }
 
@@ -108,10 +115,15 @@ main {
         display: flex;
         flex-direction: column;
         align-items: end;
-        @media (max-width: 767px) {
-          flex-direction: column-reverse;
-          align-items: center;
+        @media (max-width:1279px) {
           width: auto;
+          align-items: start;
+          
+          @media (max-width: 767px) {
+            flex-direction: column-reverse;
+            align-items: center;
+            width: auto;
+          }
         }
       }
       .banner__3__img {
@@ -123,9 +135,12 @@ main {
       .banner__3__text {
         margin-top: 44px;
         display: flex;
-        width: 320px;
+        width: 300px;
         justify-content: end;
         flex-wrap: wrap;
+        @media (max-width:1279px) {
+          justify-content: start;
+        }
         @media (max-width: 767px) {
           /* width: auto; */
           justify-content: center;
