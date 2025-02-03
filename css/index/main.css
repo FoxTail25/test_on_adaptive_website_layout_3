@@ -251,6 +251,7 @@ main {
           margin: 24px 0;
           @media (max-width: 1279px) {
             margin: 20px 0;
+            padding: 0 20px;
           }
         }
       }
@@ -264,9 +265,13 @@ main {
         align-items: center;
         justify-content: space-between;
         box-sizing: border-box;
-
+        
         padding-left: 20px;
         /* padding-right: 20px; */
+        @media (max-width:767px) {
+          width: 335px;
+          
+        }
 
         :first-child {
           box-sizing: border-box;
