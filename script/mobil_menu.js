@@ -13,11 +13,11 @@ function open_and_close_mobil_menu () {
     if(!menu_open) {
         mobil_menu.style.display = "flex";
         menu_open = true;
-        btn.style.background = 'url("../../img/icons/mobil_menu_close.svg") center';
+        btn.style.background = 'url(../../img/icons/mobil_menu_close.svg) center';
     } else {
         mobil_menu.style.display = "none";
         menu_open = false;
-        btn.style.background = 'url("../../img/icons/gg_menu-left.svg")';
+        btn.style.background = 'url(../../img/icons/gg_menu-left.svg)';
     }
 }
 
