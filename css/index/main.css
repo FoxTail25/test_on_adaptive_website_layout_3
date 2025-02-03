@@ -94,8 +94,18 @@ main {
           bottom: -30px;
           width: 114px;
           height: 114px;
-          background: center/150% url("../../img/icons/btn_shop-now.png");
+          background: url("../../img/icons/btn_shop-now.png") center /contain;
           border-radius: 50%;
+          transition: .2s;
+          &:hover {
+            background: url("../../img/icons/btn_shop-now_hover.png") center /contain;
+          }
+          @media (max-width:767px) {
+            width: 80px;
+            height: 80px;
+            bottom:100px;
+
+          }
         }
         .banner__2__img {
           background: no-repeat url("../../img/block_b2.png") center / contain;
@@ -391,7 +401,18 @@ main {
       border: none;
       display: flex;
       margin: 44px auto;
+      width: 114px;
+      height: 114px;
+      background: url(../../img/icons/btn_order.png) center /contain;
+      transition: .2s;
       /* margin-top: 44px; */
+      &:hover {
+        background: url(../../img/icons/btn_order_hover.png) center /contain;
+      }
+      @media (max-width:767px) {
+        width: 80px;
+        height: 80px;
+      }
     }
   }
   .got_you_covered {
